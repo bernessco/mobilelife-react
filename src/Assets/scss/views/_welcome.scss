@@ -1,0 +1,15 @@
+.app-welcome {
+	&__logo {
+		margin: 0 auto;
+		padding: 0 100px;
+		padding-top: 110px;
+		padding-bottom: 60px;
+		text-align: center;
+
+		img {
+			vertical-align: top;
+			width: 100%;
+			max-width: 305px;
+		}
+	}
+}

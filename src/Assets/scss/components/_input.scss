@@ -1,0 +1,18 @@
+.app-input-wrapper {
+	width: 100%;
+	padding: 15px;
+}
+
+.app-input {
+	-webkit-appearance: none;
+	width: 100%;
+	background-color: #FAF5FF;
+	border: 0;
+	padding: 20px;
+	border-radius: 5px;
+	color: #736CEC;
+
+	&::-webkit-input-placeholder {
+		color: #A4A0EA;
+	}
+}

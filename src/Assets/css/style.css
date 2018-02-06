@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .app-button-wrapper {
   width: 100%;
-  padding: 0 15px; }
+  padding: 0 20px;
+  margin-bottom: 20px; }
 
 .app-button {
   -webkit-appearance: none;
@@ -33,29 +34,62 @@
 
 .app-input-wrapper {
   width: 100%;
-  padding: 15px; }
+  padding: 0 20px;
+  margin-bottom: 20px; }
 
 .app-input {
   -webkit-appearance: none;
   width: 100%;
   background-color: #FAF5FF;
   border: 0;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
-  color: #736CEC; }
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #eddcff; }
+  .app-input:focus:not(.app-input--error) {
+    outline: 0;
+    border: 1px solid #d4a9ff; }
   .app-input::-webkit-input-placeholder {
-    color: #A4A0EA; }
+    color: #e1c2ff; }
+  .app-input--error {
+    border-color: #FF7890; }
+    .app-input--error:focus {
+      outline: 0;
+      border-color: #FF7890; }
+  .app-input__feedback--error {
+    color: #ff7890; }
 
 .app-welcome__logo {
   margin: 0 auto;
-  padding: 0 100px;
-  padding-top: 110px;
-  padding-bottom: 60px;
-  text-align: center; }
+  text-align: center;
+  padding: 0 90px;
+  padding-top: 40px; }
   .app-welcome__logo img {
     vertical-align: top;
     width: 100%;
     max-width: 305px; }
+
+.app-welcome__text {
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 40px; }
+  .app-welcome__text h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 0; }
+  .app-welcome__text p {
+    margin: 0;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, 0.51);
+    font-size: 14px; }
+
+.app-welcome .app-input-wrapper {
+  padding-bottom: 20px; }
+
+.app-welcome .app-button-wrapper {
+  padding-bottom: 20px; }
 
 *, ::before, ::after {
   box-sizing: border-box; }
@@ -75,5 +109,5 @@ body {
 .app-container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto; }

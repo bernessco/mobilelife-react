@@ -1,8 +1,9 @@
 import { connect } from 'react-redux'
-import Header from './Component/index.jsx'
+import Questions from './component.jsx'
 
 const mapStateToProps = state => {
     return {
+		email: state.userReducer.email || ''
     }
 }
 
@@ -11,9 +12,9 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-const HeaderContainer = connect(
+const QuestionsContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Header)
+)(Questions)
 
-export default HeaderContainer
+export default QuestionsContainer

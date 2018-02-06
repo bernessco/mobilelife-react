@@ -1,6 +1,7 @@
 .app-input-wrapper {
 	width: 100%;
-	padding: 15px;
+	padding: 0 #{$gutter};
+	margin-bottom: $gutter;
 }
 
 .app-input {
@@ -8,11 +9,32 @@
 	width: 100%;
 	background-color: #FAF5FF;
 	border: 0;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 5px;
-	color: #736CEC;
+	color: $primary;
+	border: 1px solid darken(#FAF5FF, 5%);
+
+	&:focus:not(.app-input--error) {
+		outline: 0;
+		border: 1px solid darken(#FAF5FF, 15%);
+	}
 
 	&::-webkit-input-placeholder {
-		color: #A4A0EA;
+		color: darken(#FAF5FF, 10%);
+	}
+
+	&--error {
+		border-color: #FF7890;
+
+		&:focus {
+			outline: 0;
+			border-color: #FF7890;
+		}
+	}
+
+	&__feedback {
+		&--error {
+			color: #ff7890;
+		}
 	}
 }

@@ -1,6 +1,7 @@
 .app-button-wrapper {
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 #{$gutter};
+	margin-bottom: $gutter;
 }
 
 .app-button {

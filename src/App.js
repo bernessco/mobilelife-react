@@ -6,8 +6,8 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import AllReducers from './Reducers';
 
-import WelcomeView from './Views/Welcome/index.jsx'
-import QuetionsView from './Views/Questions'
+import { Container as WelcomeView } from './Views/Welcome'
+import { Container as QuestionsView } from './Views/Questions'
 
 const loggerMiddleware = createLogger();
 const Store = createStore(
@@ -25,7 +25,7 @@ class App extends Component {
 			<Router>
 				<div className="app">
 					<Route exact path="/" component={ WelcomeView }/>
-					<Route exact path="/questions" component={ QuetionsView }/>
+					<Route exact path="/questions" component={ QuestionsView }/>
 				</div>
 			</Router>
 		</Provider>

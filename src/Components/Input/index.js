@@ -1,3 +1,3 @@
-import InputComponent from './Component/index.jsx'
+import InputComponent from './component.jsx'
 export const Component = InputComponent
 

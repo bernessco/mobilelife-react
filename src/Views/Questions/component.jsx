@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import { Component as Button } from '../../Components/Button'
 import { Component as Input } from '../../Components/Input'
 class Questions extends Component {

@@ -1,2 +1,2 @@
 
-web: build-css && build-js && node server/
+web: yarn build-css && yarn build-js && node server/

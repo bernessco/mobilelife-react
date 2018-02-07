@@ -1,2 +1,2 @@
 
-web: yarn start && node server/
+web: build-css && build-js && node server/

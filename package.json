@@ -16,8 +16,8 @@
     "validator": "^9.4.0"
   },
   "scripts": {
-    "start": "npm-run-all -p watch-css start-js server",
-    "build": "npm-run-all build-css build-js",
+    "dev": "npm-run-all -p watch-css start-js server",
+    "start": "npm-run-all build-css build-js",
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "build-css": "node-sass-chokidar --include-path ./src/Assets/scss --include-path ./node_modules src/Assets/scss -o src/Assets/css",

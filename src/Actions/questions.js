@@ -32,7 +32,7 @@ export const setAnswer = answer => {
 export const fetchQuestions = () => {
     return (dispatch, getState) => {
         dispatch(requestQuestions())
-		return fetch('/questions')
+		return fetch('/api/questions')
 		.then(res => res.json(), err => new Error(err))
 		.then(questions => {
 			dispatch(receiveQuestions(questions))

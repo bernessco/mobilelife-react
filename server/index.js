@@ -10,8 +10,8 @@ const getQuestionsForClient = () => {
 		return question
 	})
 }
-app.get('/questions', (req, res) => {
-	res.status(404).send(getQuestionsForClient());
+app.get('/api/questions', (req, res) => {
+	res.status(202).send(getQuestionsForClient());
 });
 
 app.use('/', express.static(path.join(__dirname, '../build')));

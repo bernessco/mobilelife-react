@@ -1,0 +1,30 @@
+.app-questions {
+	position: relative;
+
+	&__header {
+		@extend %container;
+		background-size: cover;
+		margin-bottom: 20px;
+		padding: #{$gutter * 3} $gutter;
+
+		h1 {
+			color: $primary;
+			margin: 0;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		color: $primary;
+		padding-bottom: 20px;
+	}
+
+	&__progress {
+		margin-bottom: $gutter;
+		height: 5px;
+		background: linear-gradient(to right, #736CEC 0%,#CDA1FA 100%);
+		width: 80%;
+		transition: width .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+}

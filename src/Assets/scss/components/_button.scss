@@ -29,6 +29,10 @@
 		box-shadow: rgba(74, 73, 93, .5)  0 2px 15px;
 	}
 
+	&:active {
+		opacity: .9;
+	}
+
 	&:hover {
 		text-decoration: none;
 		cursor: pointer;

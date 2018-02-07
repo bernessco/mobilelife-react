@@ -4,7 +4,9 @@
 @import 'variables';
 @import 'components/button';
 @import 'components/input';
+
 @import 'views/welcome';
+@import 'views/questions';
 
 *, ::before, ::after {
 	box-sizing: border-box;
@@ -25,8 +27,5 @@ body {
 }
 
 .app-container {
-	width: 100%;
-	max-width: 1200px;
-	padding: 0 #{$gutter};
-	margin: 0 auto;
+	@extend %container;
 }

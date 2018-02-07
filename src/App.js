@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { Provider } from 'react-redux';
@@ -24,8 +24,11 @@ class App extends Component {
 		<Provider store={ Store }>
 			<Router>
 				<div className="app">
-					<Route exact path="/" component={ WelcomeView }/>
-					<Route exact path="/questions" component={ QuestionsView }/>
+					<Switch>
+						<Route exact path="/" component={ WelcomeView }/>
+						<Route exact path="/questions" component={ QuestionsView }/>
+						<Redirect to="/" />
+					</Switch>
 				</div>
 			</Router>
 		</Provider>

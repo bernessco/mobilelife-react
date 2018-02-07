@@ -8,18 +8,24 @@ class Questions extends Component {
 	}
 
 	componentWillMount () {
+
 		if (!this.props.email) {
 			this.context.router.history.push('/')
+			return
+		}
+
+		if (this.props.questions.length === 0) {
+			this.props.fetchQuestions()
 		}
 	}
-	
+
     render() {
         return(
 			<div className="app-questions app-container">
-				<h1>Questions</h1>
-				<Link to="/">Welcome</Link>
+				<h1>{this.props.currentQuestion.question}</h1>
+
 				<Input placeholder="Answer"/>
-				<Button text="Next question"/>
+				{!this.props.isFetching && <Button text="Next question" onClick={() => this.props.nextQuestion()}/> }
 			</div>
         )
     }

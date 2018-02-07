@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"question": "Is this real?",
+		"answers": ["yes", "maybe", "no"],
+		"correct": "yes"
+	},
+	{
+		"id": 2,
+		"question": "Is this real 2 ?",
+		"answers": ["yes", "maybe", "no"],
+		"correct": "no"
+	},
+	{
+		"id": 3,
+		"question": "Is this real?",
+		"answers": ["yes", "maybe", "no"],
+		"correct": "maybe"
+	}
+]

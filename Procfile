@@ -1,2 +1,2 @@
 
-web: node server/
+web: yarn start && node server/

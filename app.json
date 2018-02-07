@@ -1,0 +1,10 @@
+{
+	"name": "Mobilelife React Test",
+	"description": "Test excercise for frontend developer",
+	"repository": "https://github.com/bernessco/mobilelife-react",
+	"logo": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+	"keywords": ["node", "express", "static", "react"],
+	"image": "heroku/nodejs",
+	"env": {
+	}
+  }

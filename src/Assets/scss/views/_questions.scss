@@ -32,6 +32,8 @@
 
 		&-container {
 			padding: $gutter;
+			display: flex;
+    		align-items: center;
 		}
 
 		&:first-child {

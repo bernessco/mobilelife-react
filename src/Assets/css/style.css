@@ -122,7 +122,9 @@
     font-weight: bold;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .app-questions__answer-container {
-      padding: 20px; }
+      padding: 20px;
+      display: flex;
+      align-items: center; }
     .app-questions__answer:first-child {
       border-top: 1px solid rgba(0, 0, 0, 0.1); }
     .app-questions__answer input {

@@ -109,6 +109,24 @@
       color: rgba(0, 0, 0, 0.87);
       margin: 0;
       text-align: center; }
+  .app-questions__answers {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 40px;
+    padding-top: 20px; }
+  .app-questions__answer {
+    display: inline-flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .app-questions__answer-container {
+      padding: 20px; }
+    .app-questions__answer:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    .app-questions__answer input {
+      margin-right: 20px; }
   .app-questions__title {
     text-align: center;
     color: rgba(0, 0, 0, 0.87);

@@ -39,18 +39,18 @@ class Questions extends Component {
 					<h1>{this.props.currentQuestion.question}</h1>
 				</div>
 				<div className="app-questions__progress" style={ {width: (100 / this.props.questions.length) *  this.props.questionNumber + '%'} }></div>
-
-				{this.props.currentQuestion.answers && this.props.currentQuestion.answers.map(answer => {
-					return(
-						<div key={answer.id}>
-							<label>
-								<input name="answer" checked={this.state.answer === answer.id}  type="radio" value={answer.id} onChange={ () => this.setAnswerForQuestion(answer.id)}/>
-								{ answer.text }
-							</label>
-						</div>
-					)
-				})}
-
+				<div className="app-questions__answers">
+					{this.props.currentQuestion.answers && this.props.currentQuestion.answers.map(answer => {
+						return(
+							<div className="app-questions__answer" key={answer.id}>
+								<label className="app-questions__answer-container app-container" for={'answer' + answer.id}>
+									<input id={'answer' + answer.id} name="answer" checked={this.state.answer === answer.id}  type="radio" value={answer.id} onChange={ () => this.setAnswerForQuestion(answer.id)}/>
+									{ answer.text }
+								</label>
+							</div>
+						)
+					})}
+				</div>
 				<div className="app-container">
 					{(!this.props.questionsFinished) ? <Button text="Next question" onClick={() => this.proceedToNextQuestion()}/> : <Button text="Finish" onClick={() => this.finishQuestions()}/>}
 				</div>

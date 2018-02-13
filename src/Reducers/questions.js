@@ -39,7 +39,7 @@ const questionsReducer = (state = defaultState, action) => {
 		})
 		case SET_RESULT:
 		return Object.assign({}, state, {
-			result: action.result
+			result: new String(action.result)
 		})
 		default:
 			return state

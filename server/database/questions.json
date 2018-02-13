@@ -20,7 +20,7 @@
 	},
 	{
 		"id": 2,
-		"question": "What does .map() in javascript?",
+		"question": "What does .map() do in javascript?",
 		"answers": [
 			{
 				"text": "Method executes a provided function once for each array element.",
@@ -58,7 +58,7 @@
 	},
 	{
 		"id": 4,
-		"question": "Where is COBOL language most used?",
+		"question": "Where COBOL language is most used?",
 		"answers": [
 			{
 				"text": "E-commerce",

@@ -8,6 +8,7 @@ import AllReducers from './Reducers';
 
 import { Container as WelcomeView } from './Views/Welcome'
 import { Container as QuestionsView } from './Views/Questions'
+import { Container as ResultsView } from './Views/Results'
 
 const loggerMiddleware = createLogger();
 const Store = createStore(
@@ -27,6 +28,7 @@ class App extends Component {
 					<Switch>
 						<Route exact path="/" component={ WelcomeView }/>
 						<Route exact path="/questions" component={ QuestionsView }/>
+						<Route exact path="/results" component={ ResultsView }/>
 						<Redirect to="/" />
 					</Switch>
 				</div>

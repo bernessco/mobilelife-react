@@ -117,7 +117,7 @@
     margin-bottom: 20px;
     height: 5px;
     background: linear-gradient(to right, #736CEC 0%, #CDA1FA 100%);
-    width: 80%;
+    width: 0%;
     transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 *, ::before, ::after {

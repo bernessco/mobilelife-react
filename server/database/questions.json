@@ -1,20 +1,78 @@
 [
 	{
 		"id": 1,
-		"question": "Is this real?",
-		"answers": ["yes", "maybe", "no"],
-		"correct": "yes"
+		"question": "ECMAScript first appearance?",
+		"answers": [
+			{
+				"text": "2011",
+				"id": 1
+			},
+			{
+				"text": "2009",
+				"id": 2
+			},
+			{
+				"text": "1997",
+				"id": 3
+			}
+		],
+		"correct": 3
 	},
 	{
 		"id": 2,
-		"question": "Is this real 2 ?",
-		"answers": ["yes", "maybe", "no"],
-		"correct": "no"
+		"question": "What does .map() in javascript?",
+		"answers": [
+			{
+				"text": "Method executes a provided function once for each array element.",
+				"id": 1
+			},
+			{
+				"text": "Creates a new array with the results of calling a provided function on every element in the calling array.",
+				"id": 2
+			},
+			{
+				"text": "Iterates over the enumerable properties of an object. For each distinct property, statements can be executed.",
+				"id": 3
+			}
+		],
+		"correct": 2
 	},
 	{
 		"id": 3,
-		"question": "Is this real?",
-		"answers": ["yes", "maybe", "no"],
-		"correct": "maybe"
+		"question": "What is BASIC?",
+		"answers": [
+			{
+				"text": "Programing language.",
+				"id": 1
+			},
+			{
+				"text": "Basic methods to complete given task.",
+				"id": 2
+			},
+			{
+				"text": "Software",
+				"id": 3
+			}
+		],
+		"correct": 1
+	},
+	{
+		"id": 4,
+		"question": "Where is COBOL language most used?",
+		"answers": [
+			{
+				"text": "E-commerce",
+				"id": 1
+			},
+			{
+				"text": "Business, finance, and administrative systems.",
+				"id": 2
+			},
+			{
+				"text": "Crm, Erp software.",
+				"id": 3
+			}
+		],
+		"correct": 2
 	}
 ]

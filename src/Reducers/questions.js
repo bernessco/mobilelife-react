@@ -1,11 +1,13 @@
-import { REQUEST_QUESTIONS, SET_CURRENT, RECEIVE_QUESTIONS, STORE_ANSWER } from '../Actions/questions'
+import { REQUEST_QUESTIONS, SET_CURRENT, RECEIVE_QUESTIONS, STORE_ANSWER, SET_FINISHED, SET_RESULT } from '../Actions/questions'
 
 const defaultState = {
 	isFetching: false,
 	current: {},
 	questions: [],
 	answers: [],
-	index: 0
+	index: 0,
+	finished: false,
+	result: 0
 }
 
 const questionsReducer = (state = defaultState, action) => {
@@ -30,6 +32,14 @@ const questionsReducer = (state = defaultState, action) => {
 				...state.answers,
 				action.answer
 			]
+		})
+		case SET_FINISHED:
+		return Object.assign({}, state, {
+			finished: action.finished
+		})
+		case SET_RESULT:
+		return Object.assign({}, state, {
+			result: action.result
 		})
 		default:
 			return state

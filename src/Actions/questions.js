@@ -29,6 +29,22 @@ export const setAnswer = answer => {
     }
 }
 
+export const SET_FINISHED = 'SET_FINISHED'
+export const setFinished = () => {
+    return {
+		type: SET_FINISHED,
+		finished: true
+    }
+}
+
+export const SET_RESULT = 'SET_RESULT'
+export const setResult = result => {
+    return {
+		type: SET_RESULT,
+		result
+    }
+}
+
 export const fetchQuestions = () => {
     return (dispatch, getState) => {
         dispatch(requestQuestions())
@@ -48,8 +64,26 @@ export const nextQuestion = () => {
 
 		if (index + 1 <= questions.length - 1) {
 			dispatch(setCurrentQuestion(index + 1))
-		} else {
-			console.log('finish')
 		}
+
+		if (index + 1 === questions.length - 1) {
+			dispatch(setFinished())
+		}
+
+    }
+}
+export const submitAnswers = () => {
+    return (dispatch, getState) => {
+		return fetch('/api/questions', {
+			method: 'POST',
+			body: JSON.stringify(getState().questionsReducer.answers),
+			headers: new Headers({
+				'Content-Type': 'application/json'
+			})
+		})
+		.then(res => res.json(), err => new Error(err))
+		.then(result => {
+			dispatch(setResult(result.procent))
+		})
     }
 }
